@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'employee'
 ]
 
@@ -74,7 +75,7 @@ WSGI_APPLICATION = 'djano_home_assessment.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        "NAME": "Django_Assessment",
+        "NAME": "django_assessment",
         "USER": "assessment",
         "PASSWORD": "My_Django_Project",
         "HOST": "localhost",
