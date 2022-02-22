@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "9f0156b3-1e5d-42c7-bc21-1eb8acc7e48e",
+		"name": "Django_Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Getting list of all employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/employee/"
+			},
+			"response": []
+		},
+		{
+			"name": "Getting Single Employee Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/employee/1/"
+			},
+			"response": []
+		},
+		{
+			"name": "Creating Employee Record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Shams Ur Rehman Orakzai\",\n    \"job\": \"Backend Engineer at Google\",\n    \"department\": \"Backend\",\n    \"salary\": 377354,\n    \"hire_date\": \"2022-07-09\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/employee/"
+			},
+			"response": []
+		},
+		{
+			"name": "Full updation of Employee Record",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Shams Ur Rehman Orakzai\",\n    \"job\": \"Backend Engineer at Google and Amazon\",\n    \"department\": \"Backend\",\n    \"salary\": 11223344,\n    \"hire_date\": \"1990-06-04\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/employee/18/"
+			},
+			"response": []
+		},
+		{
+			"name": "Partial updation of Employee Record",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Shams Ur Rehman\",\n    \"salary\": 46583,\n    \"job\": \"Backend Engineer\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/employee/15/"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee Record",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:8000/employee/20/"
+			},
+			"response": []
+		}
+	]
+}
